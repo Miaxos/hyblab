@@ -10,5 +10,9 @@ module.exports = function(app, express) {
     utils.graph((err, html) => {
       res.render('index.ejs', {graph: html});
     })
-  });   
+  });
+
+  app.get('*', function(req, res) {
+    res.redirect('/makina_corpus/')
+  });
 }

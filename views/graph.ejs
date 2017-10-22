@@ -10,7 +10,7 @@
 
 
 <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
-<script src="http://www.chartjs.org/assets/Chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.js"></script>
 <script type="text/javascript">
 	var activeChart
 	$(document).ready(function() {
@@ -43,7 +43,6 @@
 		activeChart = new Chart(ctx).Line(data,options);
 		activeChart2 = new Chart(ctx2).Line(data,options);
 		var data2 = <%- data2 %>;
-
 	});
 
 	var data2 = <%- data2 %>;

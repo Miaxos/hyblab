@@ -505,7 +505,7 @@ $('body').find('#mapday2-').click(() => {
 
 document.addEventListener('scroll', function (event) {
 
-	if ($('body').scrollTop() >= 1400) {
+	if (window.scrollY >= 1400) {
 		pos = 1;
 		$('#conseil').show()
 		if (listSelected[4] === 1) {
